@@ -6,14 +6,14 @@
 **Passos:**
 1. Abrir navegador e acessar URL de login
 2. Preencher e-mail e senha válidos
-3. Clicar em "Ingresar"  
+3. Clicar em "Entrar"  
 **Resultado Esperado:** O sistema redireciona para a tela principal do usuário.
 
 ---
 
 ## Cenário 2: Edição de dados pessoais
 **Objetivo:** Editar e salvar dados de telefone do usuário logado.  
-**Pré-condições:** Usuário autenticado e acessando "Mis Datos".  
+**Pré-condições:** Usuário autenticado e acessando "Meus Dados".  
 **Passos:**
 1. Acessar menu "Meus dados"
 2. Preencher novo número de telefone
