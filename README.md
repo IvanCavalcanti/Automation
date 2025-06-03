@@ -1,4 +1,4 @@
-# Projeto de Automação de Testes - LATAM
+# Projeto de Automação de Testes
 
 Este repositório demonstra um fluxo completo de automação de testes funcionais em uma aplicação web, utilizando o **Robot Framework** com a biblioteca `Browser`. Os testes abrangem funcionalidades comuns como login, edição de dados pessoais, endereço, empresa e reconfiguração de dados.
 
@@ -33,3 +33,27 @@ Este repositório demonstra um fluxo completo de automação de testes funcionai
 - Screenshots de etapas críticas para validação visual (opcional).
 
 ---
+
+---
+
+## ▶️ Como executar os testes localmente
+
+### Pré-requisitos:
+- Python 3.11 instalado
+- Node.js instalado (para uso com robotframework-browser)
+- Navegador Chromium, Firefox ou WebKit (instalado automaticamente)
+
+### Passos:
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/IvanCavalcanti/Latam-automation.git
+   cd Latam-automation
+
+2. pip install -r requirements.txt
+   rfbrowser init
+
+3. robot Automacao
+
+
+
