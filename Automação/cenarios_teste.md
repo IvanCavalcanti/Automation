@@ -1,4 +1,4 @@
-# Cenários de Teste - Automação LATAM
+# Cenários de Teste - Editar Dados de Usuário
 
 ## Cenário 1: Login com credenciais válidas
 **Objetivo:** Verificar se o sistema permite o login com credenciais corretas.  
@@ -15,9 +15,9 @@
 **Objetivo:** Editar e salvar dados de telefone do usuário logado.  
 **Pré-condições:** Usuário autenticado e acessando "Mis Datos".  
 **Passos:**
-1. Acessar menu "Mis datos"
+1. Acessar menu "Meus dados"
 2. Preencher novo número de telefone
-3. Clicar em "Guardar"  
+3. Clicar em "Salvar"  
 **Resultado Esperado:** Dados salvos com sucesso e mensagem de confirmação exibida.
 
 ---
@@ -25,9 +25,9 @@
 ## Cenário 3: Edição de endereço
 **Objetivo:** Atualizar endereço completo do usuário com seleção de região, cidade e distrito.  
 **Passos:**
-1. Selecionar "Los Lagos" como estado
-2. Selecionar "Palena" como cidade
-3. Selecionar "Hualaihué" como distrito
+1. Selecionar "São Paulo" como estado
+2. Selecionar "São Paulo" como cidade
+3. Selecionar "Santo Amaro" como distrito
 4. Preencher endereço, número e complemento
 5. Salvar alterações  
 **Resultado Esperado:** Endereço salvo corretamente com exibição de mensagem de sucesso.
@@ -39,7 +39,7 @@
 **Passos:**
 1. Acessar aba da empresa
 2. Editar o nome da empresa
-3. Clicar em "Crear cuenta"  
+3. Clicar em "Criar Conta"  
 **Resultado Esperado:** Empresa atualizada com sucesso.
 
 ---
