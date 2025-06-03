@@ -8,14 +8,14 @@ ${URL}                         https://uat.exemplo.com/app/login
 ${Username}                    usuario@exemplo.com
 ${Password}                    SenhaFicticia123!
 ${Telefone}                    951475620
-${Direção}                     Rua Exemplo
+${Rua}                     Rua Exemplo
 ${Número}                      1910
 ${Complemento}                 Bloco A
 ${Company}                     Empresa QA Teste
 ${User}                        Usuário QA 
 ${Usermail}                    usuarioqa@exemplo.com
-${Telefone2}                   985412724
-${Direção2}                    Endereço Inicial
+${Telefone2}                   11997801977
+${Rua2}                    Endereço Inicial
 ${Número2}                     0010
 ${Complemento2}                Complemento Inicial
 ${User2}                       Nome Inicial Usuário
@@ -34,7 +34,7 @@ Inserir senha
       Fill Text    input[id="password"]    ${Password}
 
 Clicar no botão logar
-      Click     //button[@type='submit'][contains(.,'Ingresar')]
+      Click     //button[@type='submit'][contains(.,'Entrar')]
 
 Selecionar mis datos
       Wait For Elements State    //div[contains(@class,'avatar-header')]
@@ -44,25 +44,25 @@ Selecionar mis datos
 
 Editar dados
       Fill Text    //input[contains(@data-mask,'celphoneCL')]    ${Telefone}
-      Click        //button[@type='submit'][contains(.,'Guardar')]
+      Click        //button[@type='submit'][contains(.,'Salvar')]
       Take Screenshot
       Click        //i[@class='number-nav'][contains(.,'2')]
       Click        //i[contains(@class,'fa fa-pencil')]
 
 Editar endereço
       Click        //div[contains(@id,'stateDropDown_chosen')]
-      Wait For Elements State    //li[@class='active-result'][contains(.,'Los Lagos')]
+      Wait For Elements State    //li[@class='active-result'][contains(.,'São Paulo')]
       ...    visible    12s
       Click        //li[@class='active-result'][contains(.,'Los Lagos')] 
       Click        //div[contains(@id,'cityDropDown_chosen')]
-      Wait For Elements State    //li[@class='active-result'][contains(.,'Palena')]
+      Wait For Elements State    //li[@class='active-result'][contains(.,'São Paulo')]
       ...    visible    12s
       Click        //li[@class='active-result'][contains(.,'Palena')]
       Click        //div[contains(@id,'districtDropDown_chosen')]
-      Wait For Elements State    //li[@class='active-result'][contains(.,'Hualaihué')]
+      Wait For Elements State    //li[@class='active-result'][contains(.,'Santo Amaro')]
       ...    visible    12s
-      Click        //li[@class='active-result'][contains(.,'Hualaihué')]
-      Fill Text    //input[@class='form-control ']    ${Direção}
+      Click        //li[@class='active-result'][contains(.,'Santo Amaro')]
+      Fill Text    //input[@class='form-control ']    ${Rua}
       Fill Text    //input[contains(@id,'numberTextBox')]    ${Número}
       Fill Text    //input[contains(@id,'complementTextBox')]    ${Complemento}
       Click        //button[@type='submit'][contains(.,'Guardar')]
@@ -95,32 +95,32 @@ Refazer configurações iniciais
       Wait For Elements State    //div[contains(@class,'avatar-header')]
       ...          visible    12s
       Click        //div[contains(@class,'avatar-header')]
-      Click        //a[contains(.,'Mis datos')]
+      Click        //a[contains(.,'Meus Dados')]
       Fill Text    //input[contains(@data-mask,'celphoneCL')]    ${Telefone2}
-      Click        //button[@type='submit'][contains(.,'Guardar')]
+      Click        //button[@type='submit'][contains(.,'Salvar')]
       Take Screenshot
       Sleep        7s
       Click        //i[@class='number-nav'][contains(.,'2')]
       Click        //i[contains(@class,'fa fa-pencil')]
       Click        //div[contains(@id,'stateDropDown_chosen')]
       Sleep        7s
-      Wait For Elements State    //li[@class='active-result'][contains(.,'Valparaíso')]
+      Wait For Elements State    //li[@class='active-result'][contains(.,'Rio de Janeiro')]
       ...    visible    7s 
-      Click        //li[@class='active-result'][contains(.,'Valparaíso')] 
+      Click        //li[@class='active-result'][contains(.,'Rio de Janeiro')] 
       Click        //a[@class='chosen-single'][contains(.,'-- Seleccione --')]
       Sleep        3s 
-      Wait For Elements State    //li[contains(.,'San Antonio')]
+      Wait For Elements State    //li[contains(.,'Lapa')]
       ...    visible    7s       
-      Click        //li[contains(.,'San Antonio')]
+      Click        //li[contains(.,'Lapa')]
       Click        //a[@class='chosen-single'][contains(.,'-- Seleccione --')]
       Sleep        3s 
-      Wait For Elements State    //li[contains(.,'Cartagena')]
+      Wait For Elements State    //li[contains(.,'Zona Central')]
       ...    visible    7s       
-      Click        //li[contains(.,'Cartagena')]
+      Click        //li[contains(.,'Zona Central')]
       Fill Text    //input[@class='form-control ']    ${Direção2}
       Fill Text    //input[contains(@id,'numberTextBox')]    ${Número2}
       Fill Text    //input[contains(@id,'complementTextBox')]    ${Complemento2}
-      Click        //button[@type='submit'][contains(.,'Guardar')]
+      Click        //button[@type='submit'][contains(.,'Salvar')]
       Take Screenshot
       Sleep        7s
       Click        //i[@class='number-nav'][contains(.,'4')]
@@ -129,7 +129,7 @@ Refazer configurações iniciais
       Fill Text    //input[contains(@id,'emailTextBox')]    ${Usermail2}
       Fill Text    //input[contains(@id,'passwordTextBox')]    ${Password}
       Fill Text    //input[contains(@id,'confirmPasswordTextBox')]    ${Password}
-      Click        //button[@type='submit'][contains(.,'Guardar')]
+      Click        //button[@type='submit'][contains(.,'Salvar')]
       Take Screenshot
       Sleep        5s
       Click        //i[@class='number-nav'][contains(.,'3')]
