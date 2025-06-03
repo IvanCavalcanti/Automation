@@ -1,4 +1,4 @@
-# Cenários de Teste - Editar Dados de Usuário
+# Cenário de Teste - Editar Dados de Usuário
 
 ## Cenário 1: Login com credenciais válidas
 **Objetivo:** Verificar se o sistema permite o login com credenciais corretas.  
