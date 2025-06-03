@@ -5,6 +5,14 @@ Este repositório demonstra um fluxo completo de automação de testes funcionai
 > ⚠️ **Aviso**: Este projeto é uma simulação baseada em experiências reais de automação de testes. Nenhuma informação sensível, confidencial ou de cliente real foi exposta. Todos os dados e URLs foram adaptados para fins educacionais e de demonstração técnica.
 
 ---
+## Estrutura do projeto
+
+1. 📂 `Automacao/` – Contém os testes funcionais
+2. 📄 `requirements.txt` – Dependências para rodar os testes
+3. 📄 `README.md` – Documentação geral
+4. 📂 `.github/workflows/` – CI/CD com GitHub Actions
+
+---
 
 ## 📌 Tecnologias utilizadas
 
