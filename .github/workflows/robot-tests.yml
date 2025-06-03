@@ -1,0 +1,32 @@
+
+name: Executar Testes Robot
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  robot:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar o repositório
+      uses: actions/checkout@v3
+
+    - name: Instalar Python e dependências
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Instalar Robot Framework e bibliotecas
+      run: |
+        pip install robotframework
+        pip install robotframework-requests
+        pip install robotframework-browser
+        rfbrowser init
+
+    - name: Executar testes
+      run: |
+        robot Automacao
